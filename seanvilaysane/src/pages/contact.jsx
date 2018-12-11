@@ -1,14 +1,21 @@
 import React from 'react'
 import Layout from '../components/layout'
 import '../../public/static/css/contact.css'
+import { Map } from '../components/map'
 
 const ContactPage = () => (
   <Layout>
     <div className="ContactPage">
       <div className="contact-links">
-        <button className="contact-btn">Github</button>
-        <button className="contact-btn">LinkedIn</button>
-        <button className="contact-btn">Google</button>
+        <a href="https://github.com/sutthirath" target="_blank">
+          <button className="contact-btn">Github</button>
+        </a>
+        <a href="https://www.linkedin.com/in/seanvilaysane/" target="_blank">
+          <button className="contact-btn">LinkedIn</button>
+        </a>
+        <a href="mailto:seanvilaysane@gmail.com" target="_top">
+          <button className="contact-btn">Email</button>
+        </a>
       </div>
       <section>
         <div className="contact-form">
@@ -37,7 +44,7 @@ const ContactPage = () => (
           </form>
         </div>
         <div className="map">
-          <h3>Map Area</h3>
+          <Map />
         </div>
       </section>
     </div>
