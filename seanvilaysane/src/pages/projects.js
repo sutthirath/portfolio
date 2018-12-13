@@ -1,97 +1,42 @@
 import React from 'react'
 import Layout from '../components/layout'
+import '../../public/static/css/projects.css'
+import seattle_transit_icon from '../images/seattle_transit_icon.png'
 
 const ProjectsPage = () => (
   <Layout>
-    <h1>Projects</h1>
-    <div>
-      <h3>Yocal</h3>
-      <atricle>
+    {/* Bug Invaders Section */}
+    <section className="project-section section-hero">
+      <h2 className="BugInvaders">BUG INVADERS</h2>
+    </section>
+    <section className="project-section section-info">
+      <div>
+        <img
+          src="https://media.giphy.com/media/1kTOfry9f5sxuYM3Fa/giphy.gif"
+          width={`${900}em`}
+          height={`${200}em`}
+        />
+      </div>
+      <div className="details">
+        <h4>"Addictive" "Fun" "Cool Game"</h4>
         <p>
-          spendisse consectetur pretium nisi, sed porta odio blandit sit amet.
-          Sed aliquet tellus nec turpis venenatis ultricies nec et neque. Etiam
-          arcu velit, suscipit vel malesuada a, ultrices et metus. Mauris
-          lobortis ut nunc et consectetur. Nunc diam sem, dignissim ac felis
-          quis, ultrices faucibus ante. In turpis quam, mollis quis rhoncus et,
-          gravida in elit. Integer pretium ut ante quis mattis. Orci varius
-          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus. Vivamus venenatis euismod sapien, nec tincidunt velit condimentum
-          vel. Morbi varius velit ex, et ultrices dolor porta in. Morbi ut magna
-          eu leo gravida fringilla a rutrum velit. Vestibulum ante ipsum primis
-          in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas
-          sed turpis viverra, consectetur ante in, semper risus. Curabitur
-          hendrerit dolor nisl, non congue odio pellentesque in. Mauris semper
-          viverra faucibus.
+          Lightweight web browser game that is built with intuiutive javascript.
+          No extra libraries or frameworks invovled. Delivering a simple but
+          enjoyable experience.
         </p>
-      </atricle>
-      <img alt="coming soon" />
-    </div>
-    <div>
-      <h3>Seattle Transit</h3>
-      <img alt="coming soon" />
-      <article>
-        <p>
-          spendisse consectetur pretium nisi, sed porta odio blandit sit amet.
-          Sed aliquet tellus nec turpis venenatis ultricies nec et neque. Etiam
-          arcu velit, suscipit vel malesuada a, ultrices et metus. Mauris
-          lobortis ut nunc et consectetur. Nunc diam sem, dignissim ac felis
-          quis, ultrices faucibus ante. In turpis quam, mollis quis rhoncus et,
-          gravida in elit. Integer pretium ut ante quis mattis. Orci varius
-          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus. Vivamus venenatis euismod sapien, nec tincidunt velit condimentum
-          vel. Morbi varius velit ex, et ultrices dolor porta in. Morbi ut magna
-          eu leo gravida fringilla a rutrum velit. Vestibulum ante ipsum primis
-          in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas
-          sed turpis viverra, consectetur ante in, semper risus. Curabitur
-          hendrerit dolor nisl, non congue odio pellentesque in. Mauris semper
-          viverra faucibus.
-        </p>
-      </article>
-    </div>
-    <div>
-      <h3>Sound Transit Hub</h3>
-      <atricle>
-        <p>
-          spendisse consectetur pretium nisi, sed porta odio blandit sit amet.
-          Sed aliquet tellus nec turpis venenatis ultricies nec et neque. Etiam
-          arcu velit, suscipit vel malesuada a, ultrices et metus. Mauris
-          lobortis ut nunc et consectetur. Nunc diam sem, dignissim ac felis
-          quis, ultrices faucibus ante. In turpis quam, mollis quis rhoncus et,
-          gravida in elit. Integer pretium ut ante quis mattis. Orci varius
-          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus. Vivamus venenatis euismod sapien, nec tincidunt velit condimentum
-          vel. Morbi varius velit ex, et ultrices dolor porta in. Morbi ut magna
-          eu leo gravida fringilla a rutrum velit. Vestibulum ante ipsum primis
-          in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas
-          sed turpis viverra, consectetur ante in, semper risus. Curabitur
-          hendrerit dolor nisl, non congue odio pellentesque in. Mauris semper
-          viverra faucibus.
-        </p>
-      </atricle>
-      <img alt="coming soon" />
-    </div>
-    <div>
-      <h3>Bug Invaders</h3>
-      <img alt="coming soon" />
-      <article>
-        <p>
-          spendisse consectetur pretium nisi, sed porta odio blandit sit amet.
-          Sed aliquet tellus nec turpis venenatis ultricies nec et neque. Etiam
-          arcu velit, suscipit vel malesuada a, ultrices et metus. Mauris
-          lobortis ut nunc et consectetur. Nunc diam sem, dignissim ac felis
-          quis, ultrices faucibus ante. In turpis quam, mollis quis rhoncus et,
-          gravida in elit. Integer pretium ut ante quis mattis. Orci varius
-          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus. Vivamus venenatis euismod sapien, nec tincidunt velit condimentum
-          vel. Morbi varius velit ex, et ultrices dolor porta in. Morbi ut magna
-          eu leo gravida fringilla a rutrum velit. Vestibulum ante ipsum primis
-          in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas
-          sed turpis viverra, consectetur ante in, semper risus. Curabitur
-          hendrerit dolor nisl, non congue odio pellentesque in. Mauris semper
-          viverra faucibus.
-        </p>
-      </article>
-    </div>
+        <a href="https://github.com/sutthirath/BugInvaders" target="_blank">
+          <button>Source Code</button>
+        </a>
+        <a href="https://sutthirath.github.io/BugInvaders/" target="_blank">
+          <button>Play Game</button>
+        </a>
+      </div>
+    </section>
+    {/* Seattle Transit Section */}
+    <section className="project-section section-hero">
+      <img src={seattle_transit_icon} width={`${400}em`} height={`${400}em`} />
+    </section>
+    <section className="project-section section-info" />
   </Layout>
 )
 

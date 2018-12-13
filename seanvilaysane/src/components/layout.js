@@ -27,8 +27,14 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
+          {/* Mapbox CSS  */}
           <link
             href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css"
+            rel="stylesheet"
+          />
+          {/* Google Font for Bug Invaders */}
+          <link
+            href="https://fonts.googleapis.com/css?family=Luckiest+Guy"
             rel="stylesheet"
           />
         </Helmet>
