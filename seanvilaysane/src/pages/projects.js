@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import '../../public/static/css/projects.css'
 import seattle_transit_icon from '../images/seattle_transit_icon.png'
+import yocal_logo from '../images/yocal_logo.png'
 
 const ProjectsPage = () => (
   <Layout>
@@ -32,11 +33,64 @@ const ProjectsPage = () => (
         </a>
       </div>
     </section>
+    <hr />
     {/* Seattle Transit Section */}
     <section className="project-section section-hero">
       <img src={seattle_transit_icon} width={`${400}em`} height={`${400}em`} />
     </section>
-    <section className="project-section section-info" />
+    <section className="project-section section-info">
+      <div className="details">
+        <h4>Simple and Easy to Use Public Transit App.</h4>
+        <p>
+          An interactive public transit app for the Seattle, WA area. Created
+          with the OneBusAway API but designed with the collaboration of Sean
+          Vilaysane, Henry Hong, and Chris Tack. Easy to navigate interface with
+          a beautiful visualization of local transit data.
+        </p>
+        <a href="https://github.com/sutthirath/SeattleTransit" target="_blank">
+          <button>Source Code</button>
+        </a>
+        <a href="https://nameless-harbor-37613.herokuapp.com/" target="_blank">
+          <button>View App</button>
+        </a>
+      </div>
+      <div>
+        <img
+          src="https://media.giphy.com/media/1yjq2rnc7GHwuuG46n/giphy.gif"
+          width={`${1200}em`}
+          height={`${200}em`}
+        />
+      </div>
+    </section>
+    <hr />
+    {/* Yocal Section */}
+    <section className="project-section section-hero">
+      <img src={yocal_logo} width={`${400}em`} height={`${400}em`} />
+    </section>
+    <section className="project-section section-info">
+      <div className="details">
+        <h4>Simple and Easy to Use Public Transit App.</h4>
+        <p>
+          An interactive public transit app for the Seattle, WA area. Created
+          with the OneBusAway API but designed with the collaboration of Sean
+          Vilaysane, Henry Hong, and Chris Tack. Easy to navigate interface with
+          a beautiful visualization of local transit data.
+        </p>
+        <a href="https://github.com/sutthirath/SeattleTransit" target="_blank">
+          <button>Source Code</button>
+        </a>
+        <a href="https://nameless-harbor-37613.herokuapp.com/" target="_blank">
+          <button>View App</button>
+        </a>
+      </div>
+      <div>
+        <img
+          src="https://media.giphy.com/media/1yjq2rnc7GHwuuG46n/giphy.gif"
+          width={`${1200}em`}
+          height={`${200}em`}
+        />
+      </div>
+    </section>
   </Layout>
 )
 
