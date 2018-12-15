@@ -37,6 +37,16 @@ const Layout = ({ children }) => (
             href="https://fonts.googleapis.com/css?family=Luckiest+Guy"
             rel="stylesheet"
           />
+          {/* Google Font for Nav */}
+          <link
+            href="https://fonts.googleapis.com/css?family=Lato:100"
+            rel="stylesheet"
+          />
+          {/* Google Font for Cards */}
+          <link
+            href="https://fonts.googleapis.com/css?family=Indie+Flower"
+            rel="stylesheet"
+          />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div

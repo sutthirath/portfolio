@@ -20,10 +20,14 @@ class ResumePage extends React.Component {
     return (
       <Layout>
         <div className="ResumePage">
-          <button onClick={this.handlePrint}>Print</button>
-          <a href={pdf} download="SeanVilaysaneResume">
-            <button>Download</button>
-          </a>
+          <div className="resume-btns">
+            <button onClick={this.handlePrint} className="resume-btn">
+              Print
+            </button>
+            <a href={pdf} download="SeanVilaysaneResume">
+              <button className="resume-btn">Download</button>
+            </a>
+          </div>
           <span>
             <iframe
               className="doc"
