@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Footer from '../components/footer'
 import '../../public/static/css/resume.css'
 import pdf from '../../public/pdf/resume.pdf'
 
@@ -18,14 +19,18 @@ class ResumePage extends React.Component {
 
   render() {
     return (
-      <Layout>
-        <div className="ResumePage">
+      <div className="ResumePage">
+        <Layout>
           <div className="resume-btns">
             <button onClick={this.handlePrint} className="resume-btn">
               Print
+              <i className="fas fa-print resume-i" />
             </button>
             <a href={pdf} download="SeanVilaysaneResume">
-              <button className="resume-btn">Download</button>
+              <button className="resume-btn">
+                Download
+                <i className="fas fa-file-download resume-i" />
+              </button>
             </a>
           </div>
           <span>
@@ -35,8 +40,9 @@ class ResumePage extends React.Component {
               frameBorder="1"
             />
           </span>
-        </div>
-      </Layout>
+        </Layout>
+        <Footer />
+      </div>
     )
   }
 }

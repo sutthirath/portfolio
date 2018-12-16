@@ -2,12 +2,12 @@ import React from 'react'
 import mapboxgl from 'mapbox-gl'
 import '../../public/static/css/map.css'
 
-export class Map extends React.Component {
-  componentDidMount() {
+class Map extends React.Component {
+  createMap() {
     mapboxgl.accessToken = process.env.MAPBOX_TOKEN
     this.map = new mapboxgl.Map({
       container: this.mapContainer,
-      style: 'mapbox://styles/mapbox/streets-v9',
+      style: 'mapbox://styles/mapbox/light-v9',
       center: [-122.3354524, 47.607817],
       zoom: 8,
     })
@@ -82,6 +82,10 @@ export class Map extends React.Component {
     })
   }
 
+  componentDidMount() {
+    this.createMap()
+  }
+
   componentWillUnmount() {
     this.map.remove()
   }
@@ -90,3 +94,5 @@ export class Map extends React.Component {
     return <div className="Map" ref={el => (this.mapContainer = el)} />
   }
 }
+
+export default Map

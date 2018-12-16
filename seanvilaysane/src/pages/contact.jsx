@@ -1,20 +1,35 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Footer from '../components/footer'
 import '../../public/static/css/contact.css'
-import { Map } from '../components/map'
+import Map from '../components/map'
 
 const ContactPage = () => (
-  <Layout>
-    <div className="ContactPage">
+  <div className="ContactPage">
+    <Layout>
       <div className="contact-links">
-        <a href="https://github.com/sutthirath" target="_blank">
-          <button className="contact-btn">Github</button>
+        <a
+          href="https://github.com/sutthirath"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="contact-btn">
+            <i className="fab fa-github" />
+          </button>
         </a>
-        <a href="https://www.linkedin.com/in/seanvilaysane/" target="_blank">
-          <button className="contact-btn">LinkedIn</button>
+        <a
+          href="https://www.linkedin.com/in/seanvilaysane/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="contact-btn">
+            <i className="fab fa-linkedin-in" />
+          </button>
         </a>
         <a href="mailto:seanvilaysane@gmail.com" target="_top">
-          <button className="contact-btn">Email</button>
+          <button className="contact-btn">
+            <i className="far fa-envelope" />
+          </button>
         </a>
       </div>
       <section>
@@ -40,15 +55,18 @@ const ContactPage = () => (
               className="contact-textarea"
               placeholder="send me a message"
             />
-            <button type="submit">Send</button>
+            <button className="send-btn" type="submit">
+              Send
+            </button>
           </form>
         </div>
         <div className="map">
           <Map />
         </div>
       </section>
-    </div>
-  </Layout>
+    </Layout>
+    <Footer />
+  </div>
 )
 
 export default ContactPage
