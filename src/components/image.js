@@ -11,7 +11,6 @@ import Img from 'gatsby-image'
  * For more information, see the docs:
  * - `gatsby-image`: https://gatsby.app/gatsby-image
  * - `StaticQuery`: https://gatsby.app/staticquery
- *
  */
 
 const Image = () => (
