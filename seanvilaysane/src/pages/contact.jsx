@@ -2,7 +2,6 @@ import React from 'react'
 import Layout from '../components/layout'
 import Footer from '../components/footer'
 import '../../public/static/css/contact.css'
-import Map from '../components/map'
 
 const ContactPage = () => (
   <div className="ContactPage">
@@ -59,9 +58,6 @@ const ContactPage = () => (
               Send
             </button>
           </form>
-        </div>
-        <div className="map">
-          <Map />
         </div>
       </section>
     </Layout>
